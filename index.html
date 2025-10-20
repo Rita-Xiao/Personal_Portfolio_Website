@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rita">
+    <meta name="description" content="Portfolio Website">
     <title>Rita Xiao's Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="static/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="static/project.js"></script>
 </head>
 <body>
     
     <header>
-        <div class = "tab-part">
+        <div class = "logo">
             <!-- Placeholder - Insert Image Here -->
-            <span>Rita Xiao</span>
-        </div>x
+            <!-- <img src="logo.png" class = "logoImg" alt="Picture of my logo for the header"> -->
+
+            <span id = "clickHome" onclick = "clickedHere('clickHome', 'index.html')">Rita Xiao</span>
+        </div>
         <nav>
-            <a> About </a>
-            <a> Education </a>
-            <a> Skills </a>
-            <a> Projects </a>
-            <a> Contact</a>
+            <a href="pages/about.html" class = "linkNav"> About </a>
+            <a href="pages/contact.html" class = "linkNav"> Education </a>
+            <a href="pages/education.html" class = "linkNav"> Skills </a>
+            <a href="pages/projects.html" class = "linkNav"> Projects </a>
+            <a href="pages/skills.html" class = "linkNav"> Contact</a>
         </nav>
     </header>
     <main>
@@ -29,6 +35,7 @@
                 <p> Thrilled to learn, and excited to explore.</p>
             </div>
             <div class = "profile_pic">
+                <h1>Hi, I am a placeholder for my profile picture</h1>
                 <!-- Insert an image of my profile picture (still need to get it taken) -->
             </div>
         </section>
