@@ -187,3 +187,34 @@ header {
 
 
 /* ----------------------End of About Page ----------------------------------- */
+
+/* Education Page */
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    
+}
+
+.highSchool {
+    border: solid 2px rgb(33, 3, 3);
+    background-color: #5297db;
+}
+
+.college {
+    border: solid 2px rgb(33, 3, 3);
+    background-color: #5297db;
+}
+
+
+/* ----------------------End of Education Page ----------------------------------- */
+
+/* Skills Page */
+
+/* ----------------------End of Skills Page ----------------------------------- */
+
+
+/* Projects Page */
+
+/* ----------------------End of Projects Page ----------------------------------- */
