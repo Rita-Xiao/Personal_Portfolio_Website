@@ -211,10 +211,21 @@ header {
 /* ----------------------End of Education Page ----------------------------------- */
 
 /* Skills Page */
-
+.skills {
+    color: white;
+}
 /* ----------------------End of Skills Page ----------------------------------- */
 
 
 /* Projects Page */
+.project {
+    color: white;
+}
+/* ----------------------End of Projects Page ----------------------------------- */
+
+/* Contact Page */
+.contact {
+    color: white;
+}
 
 /* ----------------------End of Projects Page ----------------------------------- */
