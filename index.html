@@ -16,26 +16,35 @@
     <header>
         <div class = "logo">
             <!-- Placeholder - Insert Image Here -->
-            <!-- <img src="logo.png" class = "logoImg" alt="Picture of my logo for the header"> -->
-
+            <!-- <img src="logo.png" class = "logoImg" alt="Picture of my logo for the header" /> -->
+            <img src="../static/placeholder.jpeg" class = "logoImg" 
+             onclick = "clickedHere('clickHome', '../index.html')"
+             alt="Picture of my logo for the header">
             <span id = "clickHome" onclick = "clickedHere('clickHome', 'index.html')">Rita Xiao</span>
         </div>
         <nav>
             <a href="pages/about.html" class = "linkNav"> About </a>
-            <a href="pages/contact.html" class = "linkNav"> Education </a>
-            <a href="pages/education.html" class = "linkNav"> Skills </a>
+            <a href="pages/education.html" class = "linkNav"> Education </a>
+            <a href="pages/skills.html" class = "linkNav"> Skills </a>
             <a href="pages/projects.html" class = "linkNav"> Projects </a>
-            <a href="pages/skills.html" class = "linkNav"> Contact</a>
+            <a href="pages/contact.html" class = "linkNav"> Contact</a>
         </nav>
     </header>
     <main>
         <section class="home_intro">
             <div class = "self_intro">
-                <h1>Hi, I'm Rita! </h1>
-                <p> Thrilled to learn, and excited to explore.</p>
+                <h1>
+                    <b>Hi, I'm Rita!</b>
+                </h1>
+                <p> Thrilled to learn, flowing with curiousity, and excited to explore.</p>
             </div>
-            <div class = "profile_pic">
-                <h1>Hi, I am a placeholder for my profile picture</h1>
+            <div class = "other_intro">
+                <h1>My Interests Are:</h1>
+                <ul> 
+                    <li>User Experience Research</li>
+                    <li>UX/UI Design</li>
+                    <li>Data Analytics</li>
+                </ul>
                 <!-- Insert an image of my profile picture (still need to get it taken) -->
             </div>
         </section>

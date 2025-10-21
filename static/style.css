@@ -8,82 +8,58 @@
 }
 
 body {
-    background-color: #fffdf8;
-    color: black;
+    background-color: #0A2540;
+    color: #0A2540;
 }
 
 /* For the header or "navigation bar" */
 header {
+    display: flex;
     /* To make sure that width stretches across the screen horizontally */
     width: 100%;
-    display: flex;
+    
+    border-bottom: 2px solid #1b5fa7;    
     /* It distributes the items, where item 1 is aligned to start, and 
        last item is aligned to the end, where there is equal space between 
        the rest */
     justify-content: space-between;
     /* As indicated, adds the blue background of the header */
-    background-color: #68b4efe7;
+    background-color: #0A2540;
     /* Adds shadow to the box, I added a darkish blue/purple shadow */
     box-shadow: 5px 5px 1px rgba(0, 25, 127, 0.388);
     /* Sets the top/bottom padding and the left/right padding using 
        % relative to size of element */
     padding: 2% 5%;
+    content:icon;
     /* Adds the dark blue line at the bottom of the border */
-    border-bottom: 2px solid #1b5fa7;
-    /* For a sticky header, later on, as I add in more content, if I scroll
-       the header will still be on top */
-    position: relative;
+    
 }
 
 .linkNav {
     margin-left: 30px;
     font-size: x-large;
     text-decoration: solid;
-    color: rgb(63, 60, 60);
+    color: #dbe2ed;
     font-weight: 600;
+}
+
+.logoImg {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    vertical-align: middle;
 }
 
 .logo {
     font-size: x-large;
     text-decoration: solid;
-    color: rgb(63, 60, 60);
+    color: #dbe2ed;
     font-weight: 400;
-}
-.home_intro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    flex: 1;
-    padding: 5% 5%;
-    border-color: black;
-    background-color: rgba(34, 155, 231, 0.35);
-    margin-top: 5%;
-}
-
-.self_intro, .profile_pic {
-    /* Meaning flex-grow: 1, flex-shrink: 1; flex-basic: 0, so basically
-       I want this to take up equal share of the space alongside the photo*/
-    flex: 1;
-    /* This was just trial and error, as I want it to be a bit away from 
-       the header */
-    padding: 5% 5%;
-    background-color: rgba(10, 86, 133, 0.659);
-    margin-top: 5%;
-    border-radius: 20px;
-    height: 400px;
-}
-.self_intro h1{
-    font-size: 32px;
-}
-
-.self_intro p{
-    font-size: 24px;
-    font-style:italic;
+    
 }
 
 .linkNav:hover {
-    background-color: rgb(89, 134, 201);
+    background-color: #78a5d2;
     color: white;
     border-radius: 4px;
     padding: 2px 2px 5px 5px;
@@ -93,3 +69,121 @@ header {
     font-weight: 600;
     cursor: pointer;
 }
+/* ----------------------End of Navigation Bar ----------------------------------- */
+
+/* Home Page */
+.home_intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex: 1;
+    padding: 5% 5%;
+    /* Debating on whether we need this or not */
+    /* background-color: #e5ebf0; */
+    /* margin-top: 5%; */
+}
+
+.self_intro, .other_intro{
+    /* Meaning flex-grow: 1, flex-shrink: 1; flex-basic: 0, so basically
+       I want this to take up equal share of the space alongside the photo*/
+    flex: 1;
+    /* This was just trial and error, as I want it to be a bit away from 
+       the header */
+    padding: 5%;
+    background-color: #78a5d2;
+    margin-top: 8vh;
+    border-radius: 20px;
+    border: solid 2px rgb(105, 148, 212);
+    /* height: 400px; */
+    height: 50vh;
+    width: 50vw;
+
+}
+
+.self_intro h1{
+    /* font-size: 32px; */
+    font-size: 48px;
+    color: rgb(22, 22, 25);
+}
+
+.self_intro p{
+    font-size: 32px;
+    font-style:italic;
+    position: relative;
+}
+
+
+/* ----------------------End of Home Page ----------------------------------- */
+
+
+
+/* This is for About Page */
+.about_layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5% 5%;
+    /* Debating on whether we need this or not */
+    /* background-color: #e5ebf0; */
+}
+
+
+.profile_pic {
+
+    flex: 1;
+    width: 20vh;
+    height: 30vh;
+    max-width: 250px;
+    min-width: 100px;
+
+ /* Next is CSS Box Model */
+    margin-top: 10vh;
+    /* From a quick web search, it seems to be able to horizontally center 
+    whenever we auto both margin-left and margin-right */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+
+/*  Visual and Typography */
+    border-radius: 20px;
+    background-color: #78a5d2;
+}
+
+.about_intro {
+/* Looked up css syntax, and it seems that position property comes first */
+    /* This was just trial and error, as I want it to be a bit away from 
+    the header */
+    flex: 1;
+    width: 60vw;
+    height: 50vh;
+    margin: 10vh 5vh;
+    border: solid 2px rgb(105, 148, 212);
+    padding: 5%;
+
+/*  Visual and Typography */
+    border-radius: 20px;
+    background-color: #78a5d2;
+}
+
+.about_intro h1{
+    font-size: 48px;
+}
+
+
+#plink1 p{
+    padding: 5%;
+ 
+/*  Visual and Typography */
+    border-radius: 10px;
+    background-color: #78a5d2;
+    color: white;
+    
+}
+
+
+/* ----------------------End of About Page ----------------------------------- */
