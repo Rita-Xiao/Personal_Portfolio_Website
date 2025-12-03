@@ -1,0 +1,141 @@
+
+/* Education Page */
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    
+}
+
+.highSchool {
+    border: solid 2px rgb(33, 3, 3);
+    background-color: #5297db;
+}
+
+.college {
+    border: solid 2px rgb(33, 3, 3);
+    background-color: #5297db;
+}
+
+
+/* ----------------------End of Education Page ----------------------------------- */
+
+/* ----------------------Start of Tree in Education Page ----------------------------------- */
+.tree-container {
+    position: relative;
+    width: 100%;
+    height: 80vh; /*based on 80% of height of viewport*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    position: absolute; 
+    background-color: #333;
+    transition: all 1.2s ease-out;
+    /* overflow: hidden; */
+}
+
+.vertical {
+    width: 4px;
+    height: 0;
+    left: 50%;
+    transform: translateX(-50%); /*moves element horixontally by 50% to the left*/
+}
+
+.horizontal {
+    height: 4px;
+    width: 0;
+    top: 50%; 
+    /* Grow horizontally */
+    /* left: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+#branchHS {
+    /* top: calc(50% - 80px); */
+    left: 50%;
+    transform: translate(-100%, -50%);
+    /* Move left and vertical */
+
+}
+
+#branchCollege {
+    /* top: calc(50% + 80px); */
+    left: 50%;
+    transform: translate(0, -50%);
+    /* Move vertical */
+}
+
+
+.eduCard {
+    position: absolute;
+    background: rgb(164, 223, 164);
+    padding: 15px 22px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 1s ease;
+    color: black;
+    /* opacity: 0;
+    transition: opacity 1s ease; */
+
+}
+
+#hsCard {
+    top: calc(50% - 80px);
+    left: calc(50% - 260px);
+    transform: translateY(-50%);
+    /* top: 140px;
+    left: 300px; */
+}
+
+#collegeCard {
+    top: calc(50% + 80px); /*Move slightly down from center*/
+    left: calc(50% + 260px); /*move right from center*/
+    transform: translateY(-50%);
+    /* top: 240px;
+    left: 300px; */
+}
+
+.line {
+    background-color: #333;
+    position: absolute;
+    transition: height 1.2s ease-out, width 1.2s ease-out;
+}
+
+#branchHS {
+    top: calc(50% - 80px);
+    left: 50%;
+    transform: translate(-100%, -50%);
+    width: 0;
+}
+
+#branchCollege {
+    top: calc(50% + 80px);
+    left: 50%;
+    transform: translate(0, -50%);
+    width: 0;
+}
+
+.vertical {
+    width: 4px;
+    height: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.eduCard {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.show {
+    opacity: 1;
+}
+
+
+
+/* ----------------------End of Tree in Education Page ----------------------------------- */

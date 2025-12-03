@@ -6,8 +6,10 @@
     <title>Skills Page</title>
 
     <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/skills.css">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <script src="../static/project.js"></script>
+    <script src="../static/skills.js"></script>
 </head>
 <body>
     <header>
@@ -17,7 +19,7 @@
             <span id = "clickHome" onclick = "clickedHere('clickHome', '../index.html')">Rita Xiao</span>
         </div>
         <nav>
-            <a href="about.html" class = "linkNav"> About </a>
+            <!-- <a href="about.html" class = "linkNav"> About </a> -->
             <a href="education.html" class = "linkNav"> Education </a>
             <a href="skills.html" class = "linkNav"> Skills </a>
             <a href="projects.html" class = "linkNav"> Projects </a>
@@ -25,8 +27,69 @@
         </nav>
     </header>
     <section class="skills">
-        <h1> Skills Page</h1>
-        <p>Placeholder.... for my skills...</p>
+        <h1>Skills</h1>
+
+    <div class="panel-container">
+
+        <div class="panel" onclick="togglePanel(this)">
+            <div class="panel-header">
+                <h2>Technical Skills</h2>
+            </div>
+            <div class="panel-content">
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>HTML / CSS / JavaScript</li>
+                    <li>Data Visualization</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="panel" onclick="togglePanel(this)">
+            <div class="panel-header">
+                <h2>Creative Skills</h2>
+            </div>
+            <div class="panel-content">
+                <ul>
+                    <li>UX/UI Design</li>
+                    <li>Figma</li>
+                    <li>Tableau</li>
+                    <li>Graphic Design Principles</li>
+                    <li>Wireframing & Prototyping</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="panel" onclick="togglePanel(this)">
+            <div class="panel-header">
+                <h2>Professional Skills</h2>
+            </div>
+            <div class="panel-content">
+                <ul>
+                    <li>Leadership</li>
+                    <li>Team Communication</li>
+                    <li>Public Speaking</li>
+                    <li>Detail-Oriented</li>
+                    <li>Highly-Organized</li>
+                    <li>Curious and Adaptive</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="panel" onclick="togglePanel(this)">
+            <div class="panel-header">
+                <h2>Language</h2>
+            </div>
+            <div class="panel-content">
+                <ul>
+                    <li>Mandarin: Proficient</li>
+                    <li>English</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
     </section>
     
     

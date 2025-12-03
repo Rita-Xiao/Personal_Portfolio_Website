@@ -6,6 +6,7 @@
     <title>Contact Page</title>
 
     <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <script src="../static/project.js"></script>
 </head>
@@ -18,7 +19,7 @@
             <span id = "clickHome" onclick = "clickedHere('clickHome', '../index.html')">Rita Xiao</span>
         </div>
         <nav>
-            <a href="about.html" class = "linkNav"> About </a>
+            <!-- <a href="about.html" class = "linkNav"> About </a> -->
             <a href="education.html" class = "linkNav"> Education </a>
             <a href="skills.html" class = "linkNav"> Skills </a>
             <a href="projects.html" class = "linkNav"> Projects </a>
@@ -26,10 +27,20 @@
         </nav>
     </header>
         <section class="contact">
-            <h1> Contact Page</h1>
-            <p>Placeholder.... for my contact form...
-                There will be a literal contact form...
-            </p>
+            <h1> Please Fill Out This Contact Form For Contact</h1>
+            <div id ="contactForm" class = "contactDesign">
+                <form action="" onsubmit="return validate()">
+                    <label for="UserName">Your Name (required): </label><br>
+                    <input type="text" name="UserName" id="UserName" required> <br>
+                    <label for="UserEmail">Your Email (required): </label><br>
+                    <input type="email" name="UserEmail" id="UserEmail" required> <br>
+                    <label for="UserText">Your text (required): </label> <br>
+                    <textarea name="UserText" id="UserText" cols="30" rows="10" required></textarea> <br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
     </section>
 </body>
 </html>
+
+<!-- onclick="validate() -->

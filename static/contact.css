@@ -1,0 +1,92 @@
+
+/* ----------------------Start of Contact Page ----------------------*/
+
+/* Change font, and centers contact content */
+.contact {
+    width: 100%;
+    max-width: 900px;
+    margin: 120px auto 60px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-family: "Arimo", sans-serif;
+}
+
+
+.contact h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.contactDesign {
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); /*blur effect?*/
+    max-width: 600px;
+    margin: auto;
+    border-top: 6px solid #a8c7ff;
+}
+
+.contactDesign label {
+    display: block;
+    text-align: left;
+    font-size: 0.95rem; /*relative unit*/
+    margin: 12px 0 6px 2px;
+    color: #555;
+    font-weight: 600;
+}
+
+.contactDesign input[type="text"],
+.contactDesign input[type="email"],
+.contactDesign textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 1.5px solid #d7d7d7;
+    border-radius: 10px;
+    background: #fafafa;
+    outline: none;
+    transition: 0.2s ease;
+} 
+
+/* When user clicks on it or tabs into it, and these styling will target the input inside */
+.contactDesign input:focus,
+.contactDesign textarea:focus {
+    border-color: #8eb2ff;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(173, 207, 255, 0.4);
+}
+
+
+.contactDesign input[type="submit"]{
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px;
+    background: #8eb2ff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* //When user hover over this input */
+.contactDesign input[type="submit"]:hover {
+    background: #6e93e6;
+}
+
+/* Responsiveness, adjusts font size and padding */
+@media (max-width: 600px){
+    .contact h1 {
+        font-size: 1.6rem;
+    }
+    .contactDesign {
+        padding: 25px 20px;
+    }
+}
+/* ----------------------Start of Contact Page ----------------------*/
+

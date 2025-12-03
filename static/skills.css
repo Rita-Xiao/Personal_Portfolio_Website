@@ -1,0 +1,109 @@
+/* Adds some styling, blue linear gradient */
+body {
+    background: linear-gradient(135deg, #0A2540 0%, #0E345C 60%, #0A2540 100%);
+    font-family: "Arimo", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.skills {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 2.8rem; /*relative units*/
+    font-weight: 700;
+    margin-bottom: 40px;
+    /* color: #2b2b2b; */
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.panel-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /*add space*/
+}
+
+/* Trying to gets 4 items per row, 30px spacing */
+.panel {
+    flex: 1 1 calc(25% - 30px); /*Should be 25% of container's width - 30 px*/
+    min-width: 250px;
+    max-width: 320px;
+    /* background: white; */
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 15px;
+    padding: 0;
+    overflow: hidden; /*No overflow of content*/
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.panel:hover {
+    transform: translateY(-6px); /*Moves the eleement -6px along y axis*/
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.panel-header {
+    padding: 18px;
+    background: #d0dbf3;
+    border-bottom: 1px solid #e3e6ec;
+}
+
+.panel-header h2 {
+    margin: 0;
+    font-size: 1.25rem; /*relative units*/
+    font-weight: 600;
+    color: #222;
+}
+
+.panel-content {
+    max-height: 0;
+    overflow: hidden; /*no overflow content, hide*/
+    padding: 0 20px;
+    transition: max-height 0.4s ease, padding 0.3s ease; /*smoother changes*/
+}
+
+.panel.active .panel-content {
+    padding: 20px;
+    max-height: 300px;
+}
+
+.panel-content ul {
+    margin: 0;
+    padding-left: 18px;
+    text-align: left;
+}
+
+.panel-content li {
+    margin-bottom: 8px;
+    font-size: 0.95rem; /*relative units*/
+    color: #444;
+}
+
+/*responsive design*/
+@media (max-width: 900px){
+    .panel {
+        flex: 1 1 calc(50% -30px);
+    }
+}
+
+/*responsive design*/
+@media (max-width: 500px) {
+    .panel {
+        flex: 1 1 100%;
+    }
+    .skills h1{
+        font-size: 2.2rem;
+    }
+}

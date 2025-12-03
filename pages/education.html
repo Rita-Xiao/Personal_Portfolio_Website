@@ -7,6 +7,7 @@
 
 
     <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/education.css">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <script src="../static/project.js"></script>
 </head>
@@ -18,7 +19,7 @@
             <span id = "clickHome" onclick = "clickedHere('clickHome', '../index.html')">Rita Xiao</span>
         </div>
         <nav>
-            <a href="about.html" class = "linkNav"> About </a>
+            <!-- <a href="about.html" class = "linkNav"> About </a> -->
             <a href="education.html" class = "linkNav"> Education </a>
             <a href="skills.html" class = "linkNav"> Skills </a>
             <a href="projects.html" class = "linkNav"> Projects </a>
@@ -26,19 +27,25 @@
         </nav>
     </header>
     <section class="education">
-        <h1>Education Page</h1>
-        <div class="highSchool">
-            <h3>Tipton High School</h3>
-            <p>High School Diploma</p>
-            <p>Graduation Year: 2024</p>
-        </div>
-        <div class="college">
-            <h3>Carnegie Mellon University</h3>
-            <p>Bachelor of Science, Information Systems</p>
-            <p>Graduation Year: 2028</p>
-        </div>
-       
+        <h1>Education Section</h1>
+        <div class="tree-container">
 
+            <div id="trunk1" class="line vertical"></div>
+            <div id="branchHS" class="line horizontal"></div>
+            <div id="hsCard" class="eduCard">
+                <h3>Tipton High School</h3>
+                <p>High School Diploma</p>
+                <p>Graduation Year: 2024</p>
+            </div>
+
+            <div id="trunk2" class="line vertical"></div>
+            <div id="branchCollege" class="line horizontal"></div>
+            <div id="collegeCard" class="eduCard">
+                <h3>Carnegie Mellon University</h3>
+                <p>Bachelor of Science, Information Systems</p>
+                <p>Graduation Year: 2028</p>
+            </div>
+        </div>
     </section>
 </body>
 </html>

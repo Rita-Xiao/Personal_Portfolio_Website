@@ -3,52 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Rita">
-    <meta name="description" content="Portfolio Website">
-    <title>Rita Xiao's Portfolio Website</title>
+    <title>Home Page</title>
 
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <script src="static/project.js"></script>
+    <script src="../static/project.js"></script>
 </head>
 <body>
-    
     <header>
         <div class = "logo">
             <!-- Placeholder - Insert Image Here -->
-            <!-- <img src="logo.png" class = "logoImg" alt="Picture of my logo for the header" /> -->
-            <img src="../static/placeholder.jpeg" class = "logoImg" 
-             onclick = "clickedHere('clickHome', '../index.html')"
-             alt="Picture of my logo for the header">
-            <span id = "clickHome" onclick = "clickedHere('clickHome', 'index.html')">Rita Xiao</span>
+            <img src="../static/placeholder.jpeg" 
+             onclick = "clickedHere('clickHome', '../index.html')" 
+             class = "logoImg" alt="Picture of my logo for the header">
+            <span id = "clickHome" onclick = "clickedHere('clickHome', '../index.html')">Rita Xiao</span>
         </div>
         <nav>
-            <a href="pages/about.html" class = "linkNav"> About </a>
+            <!-- <a href="about.html" class = "linkNav"> About </a> -->
             <a href="pages/education.html" class = "linkNav"> Education </a>
             <a href="pages/skills.html" class = "linkNav"> Skills </a>
             <a href="pages/projects.html" class = "linkNav"> Projects </a>
             <a href="pages/contact.html" class = "linkNav"> Contact</a>
         </nav>
     </header>
-    <main>
-        <section class="home_intro">
-            <div class = "self_intro">
-                <h1>
-                    <b>Hi, I'm Rita!</b>
-                </h1>
-                <p> Thrilled to learn, flowing with curiousity, and excited to explore.</p>
+    <section class = "about_layout">
+        <div class="profile_tab">
+            <div class = "profile_pic">
+                <img src = "../static/image.png" alt = "Profile Picture">
             </div>
-            <div class = "other_intro">
-                <h1>My Interests Are:</h1>
-                <ul> 
-                    <li>User Experience Research</li>
-                    <li>UX/UI Design</li>
-                    <li>Data Analytics</li>
-                </ul>
-                <!-- Insert an image of my profile picture (still need to get it taken) -->
-            </div>
-        </section>
-    </main>
-    <!-- <h1> Rita Xiao</h1> -->
+
+            <div id = "plink1">
+                <a href="../static/Resume.pdf" class = "resume" download>Download Resume</a>
+                <!-- <p> Placeholder 1 for Resume Download/Link</p> -->
+                <a href = "https://www.linkedin.com/in/rita-xiao/" class = "linkedIn">LinkedIn</a>
+                <!-- <p> Placeholder 2 for LinkedIn</p> -->
+            </div>  
+        </div>
+        
+        <div class="about_intro">
+            <h1>Welcome!</h1>
+            <!-- <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                qui officia deserunt mollit anim id est laborum.</p> -->
+            <p>
+                Hi! My name is Rita Xiao, and I'm a second-year Information Systems major at 
+                Carnegie Mellon University. I'm passionate about the intersection of technology, 
+                problem-solving, and human-centered design. I love building projects that combine creativity with 
+                functionality and make an impact on the people who use them.
+
+            </p>
+            
+        </div>
+        
+        
+    </section>
+    
+    
+    
 </body>
 </html>
